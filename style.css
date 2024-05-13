@@ -7,7 +7,7 @@
 }
 
 body{
-    background-color: rgb(68, 68, 73);
+    background-color: rgb(76, 76, 78);
     height: 100vh;
 }
 
@@ -43,7 +43,7 @@ h2.titulo{
 
 /* Estilo do Cabeçalho */
 header{
-    padding: 40px 4%;
+    padding: 70px 4%;
     color: white;
     font-size: 30px;
 }
@@ -55,15 +55,15 @@ header > .interface{
 }
 
 header a{
-    color: rgb(20, 20, 20);
+    color: rgb(235, 228, 228);
     text-decoration: none;
     display: inline-block;
     transition: .2s;
 }
 
 header a:hover{
-    color: #a04a4a; 
-    transform: scale(1.4);
+    color: #8da04a; 
+    transform: scale(1.05);
 }
 
 header nav ul{
@@ -88,13 +88,13 @@ header nav ul li:hover{
 }
 
 .logo img{
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
 }
 
 /* Estilo do Topo do site */
 section.topo-do-site{
-    padding: 60px 4%;
+    padding: 120px 4%;
 }
 
 section.topo-do-site .flex{
@@ -105,24 +105,24 @@ section.topo-do-site .flex{
 
 .topo-do-site .txt-topo-site h1{
     color: #fff;
-    font-size: 40px;
+    font-size: 52px;
     line-height: 40px;
 }
 
 .topo-do-site .txt-topo-site p{
     color: #fff;
-    font-size: 20px;
+    font-size: 25px;
     margin: 40px 0;
 }
 
 .topo-do-site .img-topo-site img{
-    width: 270px;
-    height: 400px;
+    width: 350px;
+    height: 500px;
 }
 
 /* Estilo da Formação*/
 section.formação{
-    padding: 100px 4%;
+    padding: 300px 4%;
     font-size: 25px;
 }
 
@@ -145,12 +145,12 @@ section.formação{
 /* Estilo Sobre*/
 
 .sobre .img-sobre img{
-    width: 290px;
-    height: 400px;
+    width: 400px;
+    height: 550px;
 }
 
 section.sobre{
-    padding: 100px 4%;
+    padding: 285px 4%;
 }
 
 section.sobre .flex{
@@ -163,40 +163,42 @@ section.sobre .flex{
 }
 
 .sobre .txt-sobre h2{
-    font-size: 70px;
-    line-height: 50px;
+    font-size: 85px;
+    line-height: 60px;
     margin-bottom: 35px;
 }
 
-.sobre .txt-sobre h2 spam{
-    color: rgb(126, 155, 199);
+.sobre .txt-sobre h2 span{
+    padding: 15px 0;
+    font-size: 90px;
+    color: rgb(147, 170, 204);
     display: block;
 }
 
 .sobre .txt-sobre p{
     margin: 20px 0;
     text-align: justify;
-    font-size: 30px;
+    font-size: 35px;
 }
 
 /* Estilo do Projeto*/
 
 section.projetos .titulo{
-    padding: 80px 0;
-    box-shadow: 0 0 40px 10px #464242;
-    font-size: 60px;
+    padding: 240px 0;
+    box-shadow: 0 0 50px 10px #464242;
+    font-size: 80px;
 }
 
 section.projetos p{
-    font-size: 40px;
+    font-size: 50px;
     text-align: center;
-    padding: 80px 0;
+    padding: 150px 0;
     color: #fff;
 }
 
 /* Estilo do Formulário*/
 section.formulario{
-    padding: 90px 4%;
+    padding: 150px 4%;
 }
 
 form{
@@ -222,7 +224,7 @@ form input, form textarea{
 
 form textarea{
     resize: none;
-    max-height: 180px;
+    max-height: 220px;
 }
 
 form .btn-enviar{
@@ -247,11 +249,31 @@ footer{
     text-align: center;
 }
 
-@media screen and (max-width: 1020px){
+@media screen and (max-widht: 1150px){
     .flex{
         flex-direction: column;
     }
     .menu-desktop, .btn-contato{
-        display: none;
+        display: block;
     }
+    section.topo-do-site{
+        padding: 20px 8%;
+    }
+    .topo-do-site h1{
+        font-size: 30px;
+    }
+    .topo-do-site .img-topo-site img{
+        width: 100%;
+    }
+}
+
+.voltar-ao-topo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #a7ddbc;
+    color: #000;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
 }
